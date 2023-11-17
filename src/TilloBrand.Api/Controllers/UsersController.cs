@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using TilloBrand.Api.Responses;
+using TilloBrand.Service.Configurations;
 using TilloBrand.Service.DTOs.Users;
 using TilloBrand.Service.Interfaces;
 
@@ -7,21 +9,22 @@ namespace TilloBrand.Api.Controllers;
 
 public class UsersController : BaseController
 {
-    private readonly IUserService _userService;
+    private readonly IRepository _userService;
 
-    public UsersController(IUserService userService)
+    public UsersController(IRepository userService)
     {
         this._userService = userService;
     }
 
     [HttpGet]
-    public async Task<IActionResult> GetAllAsync()
+    [Authorize]
+    public async Task<IActionResult> GetAllAsync([FromQuery] PaginationParams @params)
     {
         var response = new Response()
         {
             StatusCode = 200,
             Message = "Success",
-            Data = await this._userService.GetAllAsync()
+            Data = await this._userService.GetAllAsync(@params)
         };
         return Ok(response);
     }

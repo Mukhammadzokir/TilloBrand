@@ -3,23 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TilloBrand.Api", "TilloBrand.Api\TilloBrand.Api.csproj", "{163597FD-BD06-4179-9D96-F39ABD057A8C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TilloBrand.Domain", "TilloBrand.Domain\TilloBrand.Domain.csproj", "{8AD147E9-0B9B-44E6-AD23-6B055F3E0C19}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TilloBrand.Data", "TilloBrand.Data\TilloBrand.Data.csproj", "{A747B2ED-4564-456F-AAB2-B1DF85057F93}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TilloBrand.Service", "TilloBrand.Service\TilloBrand.Service.csproj", "{559C34C5-FFAB-471B-92BF-871F51FDD3C7}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4FE484D1-FD3C-4EB0-AB94-75F00BDAE098}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TilloBrand.Api", "src\TilloBrand.Api\TilloBrand.Api.csproj", "{E1EACE45-6E5E-4C66-8A1B-ED0470956212}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TilloBrand.Api", "src\TilloBrand.Api\TilloBrand.Api.csproj", "{E1EACE45-6E5E-4C66-8A1B-ED0470956212}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TilloBrand.Data", "src\TilloBrand.Data\TilloBrand.Data.csproj", "{C3308661-705A-416D-93A3-DC0AB04FD3BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TilloBrand.Data", "src\TilloBrand.Data\TilloBrand.Data.csproj", "{C3308661-705A-416D-93A3-DC0AB04FD3BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TilloBrand.Domain", "src\TilloBrand.Domain\TilloBrand.Domain.csproj", "{77616A43-51C9-4650-95A7-384144EBDCC2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TilloBrand.Domain", "src\TilloBrand.Domain\TilloBrand.Domain.csproj", "{77616A43-51C9-4650-95A7-384144EBDCC2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TilloBrand.Service", "src\TilloBrand.Service\TilloBrand.Service.csproj", "{E465565D-95E9-492E-8DFE-DC546C3FFE6D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TilloBrand.Service", "src\TilloBrand.Service\TilloBrand.Service.csproj", "{E465565D-95E9-492E-8DFE-DC546C3FFE6D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,22 +19,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{163597FD-BD06-4179-9D96-F39ABD057A8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{163597FD-BD06-4179-9D96-F39ABD057A8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{163597FD-BD06-4179-9D96-F39ABD057A8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{163597FD-BD06-4179-9D96-F39ABD057A8C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8AD147E9-0B9B-44E6-AD23-6B055F3E0C19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8AD147E9-0B9B-44E6-AD23-6B055F3E0C19}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8AD147E9-0B9B-44E6-AD23-6B055F3E0C19}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8AD147E9-0B9B-44E6-AD23-6B055F3E0C19}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A747B2ED-4564-456F-AAB2-B1DF85057F93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A747B2ED-4564-456F-AAB2-B1DF85057F93}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A747B2ED-4564-456F-AAB2-B1DF85057F93}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A747B2ED-4564-456F-AAB2-B1DF85057F93}.Release|Any CPU.Build.0 = Release|Any CPU
-		{559C34C5-FFAB-471B-92BF-871F51FDD3C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{559C34C5-FFAB-471B-92BF-871F51FDD3C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{559C34C5-FFAB-471B-92BF-871F51FDD3C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{559C34C5-FFAB-471B-92BF-871F51FDD3C7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E1EACE45-6E5E-4C66-8A1B-ED0470956212}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E1EACE45-6E5E-4C66-8A1B-ED0470956212}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E1EACE45-6E5E-4C66-8A1B-ED0470956212}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -63,13 +39,13 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {3B2116D3-50C4-4C50-81DD-CB1BC93CE709}
-	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{E1EACE45-6E5E-4C66-8A1B-ED0470956212} = {4FE484D1-FD3C-4EB0-AB94-75F00BDAE098}
 		{C3308661-705A-416D-93A3-DC0AB04FD3BA} = {4FE484D1-FD3C-4EB0-AB94-75F00BDAE098}
 		{77616A43-51C9-4650-95A7-384144EBDCC2} = {4FE484D1-FD3C-4EB0-AB94-75F00BDAE098}
 		{E465565D-95E9-492E-8DFE-DC546C3FFE6D} = {4FE484D1-FD3C-4EB0-AB94-75F00BDAE098}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3B2116D3-50C4-4C50-81DD-CB1BC93CE709}
 	EndGlobalSection
 EndGlobal

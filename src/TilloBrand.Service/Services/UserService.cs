@@ -2,13 +2,15 @@
 using Microsoft.EntityFrameworkCore;
 using TilloBrand.Data.IRepositories;
 using TilloBrand.Domain.Entities;
+using TilloBrand.Service.Configurations;
 using TilloBrand.Service.DTOs.Users;
 using TilloBrand.Service.Exceptions;
+using TilloBrand.Service.Extensions;
 using TilloBrand.Service.Interfaces;
 
 namespace TilloBrand.Service.Services;
 
-public class UserService : IUserService
+public class UserService : IRepository
 {
     private readonly IMapper _mapper;
     private readonly IRepository<User> _userRepository;
@@ -32,9 +34,13 @@ public class UserService : IUserService
         
     }
 
-    public async Task<IEnumerable<UserForResultDto>> GetAllAsync()
+    public async Task<IEnumerable<UserForResultDto>> GetAllAsync(PaginationParams @params)
     {
-        var data = await  this._userRepository.SelectAll().AsNoTracking().ToListAsync();
+        var data = await  this._userRepository
+            .SelectAll()
+            .AsNoTracking()
+            .ToPagedList(@params)
+            .ToListAsync();
         return this._mapper.Map<IEnumerable<UserForResultDto>>(data);
 
     }

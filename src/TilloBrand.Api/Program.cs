@@ -19,6 +19,10 @@ builder.Services.AddSwaggerGen(c =>
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "TilloBrandApi", Version = "v1" });
 });
 
+//JWT
+builder.Services.AddJwtService(builder.Configuration);
+//Swagger
+builder.Services.ConfigureSwagger();
 //// Database configuration
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"))
